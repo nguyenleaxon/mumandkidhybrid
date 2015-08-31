@@ -1,0 +1,35 @@
+<ion-view view-title="Video" >
+    <ion-content>
+
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img ng-src="http:{{video.image}}">
+                <h2>{{video.name}}</h2>
+
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" ng-src="http:{{video.image}}"  ng-click="playVideo(video.url)">
+
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" ng-click="playVideo(video.url)">
+                    <i class="icon ion-social-youtube-outline"></i>
+                       Xem
+                     </a>
+                <a class="tab-item" ng-click="insertVideo(video.id,video.name,video.url,video.image)">
+                    <i class="icon ion-star"></i>
+                      Yêu thích
+                </a>
+                <a class="tab-item" ng-click="shareVideoToFacebook('Demo message', 'www/img/image1.jpeg', 'https://play.google.com/store/apps/details?id=com.nguyenle.gotoagilevn')">
+                    <i class="icon ion-share" ></i>
+                    Chia sẽ
+                </a>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
