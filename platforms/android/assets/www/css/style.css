@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+.row.unlimited-items {
+    flex-wrap: wrap;
+}
+
+.row.unlimited-items .col{
+    flex: none;
+    width: 25%;
+}
+
+.button.button-icon.input-button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #bbb;
+}
+.full-width {
+    width: 100%;
+}

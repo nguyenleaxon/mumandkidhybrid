@@ -1,0 +1,11 @@
+<ion-view view-title="Mẹ Nấu Ăn" >
+  <ion-content>
+
+      <div class="row unlimited-items">
+          <div class="col" ng-repeat="category in categories">
+              <img ng-click="displayVideos(category.id)" ng-src="{{category.imagePath}}" >
+              <div style="text-align: center">{{category.name}}</div>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

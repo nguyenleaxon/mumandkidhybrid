@@ -1,0 +1,21 @@
+<ion-view view-title="Videos">
+    <ion-content  overflow-scroll="false" >
+        <ion-list>
+            <ion-item  collection-repeat="video in _videos" class="item-thumbnail-left">
+                <img ng-src="http:{{video.image}}" ng-click="gotoShowVideoScreen(video)" >
+                <h2>{{video.name}}</h2>
+               <button class="ion-android-favorite-outline button button-clear button-positive" ng-click="gotoShowVideoScreen(video)">
+                   Click Xem Video
+                </button>
+               <!-- <div ng-click="playVideo(video.name)"> Click To See </div>-->
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll
+                ng-if="canWeLoadMoreVideo()"
+                on-infinite="loadMoreVideo()"
+                icon="ion-loading-c"
+                distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

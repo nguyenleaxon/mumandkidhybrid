@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar bar-header bar-assertive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+        <header class="bar bar-header bar-assertive"><h1 class="title">Menu</h1></header>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close class="item-icon-left"  href="#/app/home">
+            <i class="icon ion-home"></i>Trang chủ
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/favourist">
+            <i class="icon ion-star"></i>  Yêu thích
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/search">
+            <i class="icon ion-search"></i>  Tìm kiếm video
+        </ion-item>
+         <ion-item menu-close class="item-icon-left" href="#/app/information">
+             <i class="icon ion-android-share-alt"></i> Phản hồi
+          </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
