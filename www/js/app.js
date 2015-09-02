@@ -1,7 +1,7 @@
 var db = null;
 angular.module('mamacooking', ['ionic', 'oc.lazyLoad', 'LocalStorageModule','ngCordova'])
     .constant('ApiEndpoint', {
-        url: 'http://128.199.101.93:3000/'
+        url: 'http://localhost:3000/'
     })
     .run(function ($ionicPlatform,$cordovaSQLite,$state) {
         $ionicPlatform.ready(function () {
@@ -43,14 +43,6 @@ angular.module('mamacooking', ['ionic', 'oc.lazyLoad', 'LocalStorageModule','ngC
             };
             AdMob.setOptions( defaultOptions );*/
 
-            AdMob.createBanner({
-                adId: 'ca-app-pub-7732165171285075/9145238546',
-                position: AdMob.AD_POSITION.BOTTOM_CENTER,
-                autoShow: true,
-                isTesting: false,
-                overlap:false
-            });
-
 
 
 
@@ -62,7 +54,7 @@ angular.module('mamacooking', ['ionic', 'oc.lazyLoad', 'LocalStorageModule','ngC
     })
 
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $ocLazyLoadProvider, localStorageServiceProvider) {
-        localStorageServiceProvider.setPrefix('mamacooking')
+        localStorageServiceProvider.setPrefix('mumandkid')
             .setStorageType('sessionStorage')
             .setNotify(true, true);
 

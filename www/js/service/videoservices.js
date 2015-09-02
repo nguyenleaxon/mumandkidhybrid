@@ -7,7 +7,7 @@ video.service('VideoService',['$http','$log','ApiEndpoint',function ($http,$log,
         console.log(requestVideo);
         var promise = $http({
             method: 'POST',
-            url: ApiEndpoint.url+'getAllVideoByCategory',
+            url: ApiEndpoint.url+'getAllVideoFirstTime',
             data: requestVideo
         }).success(function (data) {
 
